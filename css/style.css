@@ -22,8 +22,8 @@ body{
 }
 
 .imc-container{
-    min-width: 400px;
-    height: 500px;
+    min-width: 30%;
+    height: 30rem;
     background: rgb(31, 5, 41);
     color: #fff;
     display: flex;
