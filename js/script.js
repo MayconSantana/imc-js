@@ -92,7 +92,14 @@ const changeWindow = () => {
 }
 
 const calcImc = (height, weight) => {
-    const imc = (weight / (height*height)).toFixed(1);
+    let imc;
+
+    if (parseInt(height) != parseFloat(height)) {
+        imc = (weight / (height*height)).toFixed(1);
+    } else {
+        imc = (((weight / height) / height) * 10000).toFixed(1);
+    }
+
     return imc;
 }
 
