@@ -22,7 +22,7 @@ body{
 }
 
 .imc-container{
-    min-width: 30%;
+    min-width: 32%;
     height: 30rem;
     background: rgb(31, 5, 41);
     color: #fff;
@@ -162,4 +162,12 @@ body{
 
 .bad{
     color: rgb(209, 0, 0);
+}
+
+
+@media (max-width: 1075px)
+{
+    .imc-container{
+        padding: 0 3rem;
+    }
 }
