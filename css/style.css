@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans Display', sans-serif;
+}
+
+body{
+    background: rgb(20, 4, 29);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.hide{
+    display: none !important;
+}
+
+.imc-container{
+    min-width: 400px;
+    height: 500px;
+    background: rgb(31, 5, 41);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .3);
+}
+
+.imc-container h1{
+    margin-bottom: 1rem;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    width: 250px;
+}
+
+.input-group label{
+    font-size: 22px;
+    padding: .5rem 0;
+}
+
+.input-group input{
+    padding: .8rem .5rem;
+    font-size: 18px;;
+}
+
+.buttons-group{
+    margin-top: 2rem;
+    width: 100%;
+    text-align: center;
+}
+
+.buttons-group button{
+    text-transform: uppercase;
+    padding: .7rem .3rem;
+    background: rgb(247, 132, 24);
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    width: 118px;
+    cursor: pointer;
+    opacity: .9;
+    border: none;
+    margin: 0 .3rem;
+}
+
+.buttons-group button:last-of-type{
+    background: rgb(71, 71, 71);
+}
+
+.buttons-group button:hover{
+    opacity: 1;
+}
+
+.table-container{
+    min-width: 400px;
+    min-height: 400px;
+    padding: 1rem;
+    background: rgb(31, 5, 41);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .3);
+}
+
+.situation{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 400px;
+}
+
+.situation p, .situation span{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+
+.table-group .line{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 400px;
+    gap: 10px;
+    padding: .5rem;
+    border-bottom: 1px solid rgba(90, 90, 90, 0.233);
+}
+
+.table-group .line p,
+.table-group .line h4{
+    flex: 1;
+}
+
+.table-group .line p:nth-of-type(3),
+.table-group .line h4:nth-of-type(3){
+    max-width: 80px;
+}
+
+.table-container button{
+    text-transform: uppercase;
+    padding: .7rem 1rem;
+    background: rgb(247, 132, 24);
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: .5rem;
+    opacity: .9;
+}
+
+.table-container button:hover{
+    opacity: 1;
+}
+
+/* Estilos para IMC */
+
+.low{
+    color: rgb(235, 223, 55);
+}
+
+.good{
+    color: rgb(12, 204, 37);
+}
+
+.medium{
+    color: rgb(218, 124, 18);
+}
+
+.bad{
+    color: rgb(209, 0, 0);
+}
